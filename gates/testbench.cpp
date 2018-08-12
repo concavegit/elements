@@ -13,10 +13,10 @@ int main(int argc, char** argv)
   Verilated::traceEverOn(true);
 
   Vmy_gates top;
-  const auto tfp = new VerilatedVcdC;
+  VerilatedVcdC tfp;
 
-  top.trace(tfp, 99);
-  tfp->open("obj_dir/trace.vcd");
+  top.trace(&tfp, 99);
+  tfp.open("obj_dir/trace.vcd");
 
   for (auto i = 0; i < 8; i++)
     {
@@ -25,10 +25,10 @@ int main(int argc, char** argv)
       top.sel = bool(i & 1 << 2);
 
       top.eval();
-      tfp->dump(main_time);
+      tfp.dump(main_time);
       main_time++;
     }
 
   top.final();
-  tfp->close();
+  tfp.close();
 }

@@ -6,6 +6,7 @@ These are basic gates implemented using only nand gates.
 2. Create executable: =make=
 3. Generate waveform: =./obj_dir/Vmy_gates=
 4. View waveform: =gtkwave obj_dir/trace.vcd=
+5. From the GUI, append the signals by selecting TOP, select the signals, and click =Append=.
 
 * Results
 Below are the resulting waveforms.
