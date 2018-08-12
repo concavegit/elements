@@ -12,23 +12,23 @@ int main(int argc, char** argv)
   Verilated::commandArgs(argc, argv);
   Verilated::traceEverOn(true);
 
-  const auto top = new Vmy_gates;
+  Vmy_gates top;
   const auto tfp = new VerilatedVcdC;
 
-  top->trace(tfp, 99);
+  top.trace(tfp, 99);
   tfp->open("obj_dir/trace.vcd");
 
   for (auto i = 0; i < 8; i++)
     {
-      top -> in1 = i & (1 << 0);
-      top -> in2 = bool(i & 1 << 1);
-      top -> sel = bool(i & 1 << 2);
+      top.in1 = i & (1 << 0);
+      top.in2 = bool(i & 1 << 1);
+      top.sel = bool(i & 1 << 2);
 
-      top->eval();
+      top.eval();
       tfp->dump(main_time);
       main_time++;
     }
 
-  top->final();
+  top.final();
   tfp->close();
 }
