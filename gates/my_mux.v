@@ -5,14 +5,14 @@ module my_mux(input in1,
 
    wire              a, b, c, d, e, f, g;
 
-   nand (a, sel, 1);
-   nand (b, in1, a);
-   nand (c, b, 1);
+   nand (a, sel, 1),
+     (b, in1, a),
+     (c, b, 1),
 
-   nand (d, sel, in2);
-   nand (e, d, 1);
+     (d, sel, in2),
+     (e, d, 1),
 
-   nand (f, c, 1);
-   nand (g, e, 1);
-   nand(out, f, g);
+     (f, c, 1),
+     (g, e, 1),
+     (out, f, g);
 endmodule
