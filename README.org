@@ -1,0 +1,13 @@
+* Elements
+
+This is a collection of various implementations of basic computer chip components.
+Currently implemented are:
+
+- gates :: Create the basic gates from NANDs
+
+* Simulation and Dependencies
+The simulation procedure is in each directory's README. However, the dependencies are all the same:
+
+- [[https://www.gnu.org/software/make/][make]] :: Compile the sources.
+- [[https://www.veripool.org/][verilator]] :: Synthesize the verilog sources.
+- [[http://gtkwave.sourceforge.net/][gtkwave]] :: View the waveforms.
