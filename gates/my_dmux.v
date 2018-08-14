@@ -5,10 +5,10 @@ module my_dmux(input in,
 
    wire               a, b, c;
 
-   nand (a, sel, 1),
-     (b, a, in),
-     (out1, b, 1),
+   nand (a, sel, sel),
+     (b, in, a),
+     (out1, b, b),
 
      (c, in, sel),
-     (out2, c, 1);
+     (out2, c, c);
 endmodule
