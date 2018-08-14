@@ -1,15 +1,15 @@
 module my_or8way (input [7:0] in,
                   output out);
 
-   wire                   a, b, c, d, e, f;
+   wire                  a, b, c, d, e, f;
 
-   or (a, in[0], in[1]);
-   or (b, in[2], in[3]);
-   or (c, in[4], in[5]);
-   or (d, in[6], in[7]);
+   or (a, in[0], in[1]),
+     (b, in[2], in[3]),
+     (c, in[4], in[5]),
+     (d, in[6], in[7]),
 
-   or (e, a, b);
-   or (f, c, d);
+     (e, a, b),
+     (f, c, d),
 
-   or (out, e, f);
+     (out, e, f);
 endmodule
