@@ -20,7 +20,7 @@ int main(int argc, char** argv)
 
   for (auto i = 0; i < 8; i++)
     {
-      top.in1 = i & (1 << 0);
+      top.in1 = i & 1;
       top.in2 = bool(i & 1 << 1);
       top.sel = bool(i & 1 << 2);
 
