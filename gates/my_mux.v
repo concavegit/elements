@@ -1,6 +1,4 @@
-module my_mux(input in1,
-              input  in2,
-              input  sel,
+module my_mux(input in1, in2, sel,
               output out);
 
    wire              a, b, c;

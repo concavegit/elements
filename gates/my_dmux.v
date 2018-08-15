@@ -1,7 +1,5 @@
-module my_dmux(input in,
-               input  sel,
-               output out1,
-               output out2);
+module my_dmux(input in, sel,
+               output out1, out2);
 
    wire               a, b, c;
 

@@ -1,5 +1,4 @@
-module my_and(input in1,
-              input  in2,
+module my_and(input in1, in2,
               output out);
 
    wire              out1;

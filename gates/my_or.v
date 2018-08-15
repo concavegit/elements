@@ -1,5 +1,4 @@
-module my_or(input in1,
-             input  in2,
+module my_or(input in1, in2,
              output out);
 
    wire             oa1, oa2;
