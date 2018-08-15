@@ -21,5 +21,5 @@ All other gates use =in1= and =in2= for input.
 | and  |          2 |
 | or   |          3 |
 | xor  |          4 |
-| mux  |          8 |
+| mux  |          4 |
 | dmux |          5 |
