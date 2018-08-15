@@ -1,8 +1,12 @@
-module my_halfadder (input a,
-                     input  b,
-                     output sum,
-                     output carry);
+module my_halfadder (input a, b,
+                     output sum, carry);
 
-   xor (sum, a, b);
-   and (carry, a, b);
+   wire                     c, d, e;
+   
+   nand (c, a, b),
+     (carry, c, c),
+
+     (d, c, a),
+     (e, c, b),
+     (sum, d, e);
 endmodule 
