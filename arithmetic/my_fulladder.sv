@@ -1,5 +1,3 @@
-`include "my_halfadder"
-
 module my_fulladder (input a, b, c,
                      output sum, carry);
 

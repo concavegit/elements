@@ -1,7 +1,7 @@
-module my_or16way(input shortint a,
-                  output out);
+module my_or16way (input shortint a,
+                   output out);
 
-   bit                   b, c, d, e, f, g, h, i, j, k, l, m, n, o;
+   bit                    b, c, d, e, f, g, h, i, j, k, l, m, n, o;
 
    or (b, a[0], a[1]),
      (c, a[2], a[3]),

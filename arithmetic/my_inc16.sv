@@ -1,4 +1,3 @@
-`include "my_fullinc"
 module my_inc16 (input shortint in,
                  output shortint out);
 

@@ -1,20 +1,15 @@
-`include "my_and8way"
-`include "my_or8way"
-`include "my_mux8way16"
-`include "my_dmux8way"
+module my_gates8way (input shortint in0, in1, in2, in3, in4, in5, in6,
+                     in7, [2:0] sel,
 
-module my_gates8way(input shortint in0, in1, in2, in3, in4, in5, in6,
-                    in7, [2:0] sel,
+                     output          out_and, out_or,
+                                     out_dmux0, out_dmux1, out_dmux2, out_dmux3,
+                                     out_dmux4, out_dmux5, out_dmux6, out_dmux7,
 
-                    output          out_and, out_or,
-                                    out_dmux0, out_dmux1, out_dmux2, out_dmux3,
-                                    out_dmux4, out_dmux5, out_dmux6, out_dmux7,
+                     output shortint out_mux16);
 
-                    output shortint out_mux16);
+   genvar                            i;
 
-   genvar                           i;
-
-   byte                             a;
+   byte                              a;
 
    generate
       for (i = 0; i < $bits(a); i = i + 1) begin

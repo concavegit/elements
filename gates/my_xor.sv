@@ -1,8 +1,8 @@
-module my_xor(input in1,
-              input  in2,
-              output out);
+module my_xor (input in1,
+               input  in2,
+               output out);
 
-   bit               a, b, c;
+   bit                a, b, c;
 
    nand (a, in1, in2),
      (b, in1, a),

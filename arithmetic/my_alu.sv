@@ -1,6 +1,4 @@
-`include "my_add16"
 `include "../gates8way/my_mux16"
-`include "my_or16way"
 
 module my_alu (input shortint x, y,
                bit             zx, nx, zy, ny, f, no,

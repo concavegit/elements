@@ -1,5 +1,3 @@
-`include "my_fulladder"
-
 module my_add16 (input shortint a, b,
                  output shortint out);
 

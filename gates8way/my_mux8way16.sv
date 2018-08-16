@@ -1,5 +1,3 @@
-`include "my_mux16"
-
 module my_mux8way16 (input shortint in0,
                      in1,
                      in2,

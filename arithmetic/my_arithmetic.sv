@@ -10,5 +10,6 @@ module my_arithmetic (input shortint a, b,
    my_halfadder hw(a[0], b[0], out_halfadder_sum, out_halfadder_carry);
    my_fulladder fw(a[0], b[0], alu_zx, out_fulladder_sum, out_fulladder_carry);
    my_add16 aw(a, b, out_add16);
-   my_alu alw(a, b, alu_zx, alu_nx, alu_zy, alu_ny, alu_f, alu_no, alu_out, alu_zr, alu_ng);
+   my_alu alw(a, b, alu_zx, alu_nx, alu_zy, alu_ny, alu_f, alu_no,
+              alu_out, alu_zr, alu_ng);
 endmodule
