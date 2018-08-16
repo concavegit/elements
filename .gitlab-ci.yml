@@ -1,0 +1,10 @@
+before_script:
+  - apt-get update
+  - apt install -y verilator
+
+build:
+  stage: build
+  script:
+    - make -C gates
+    - make -C gates8way
+    - make -C arithmetic
