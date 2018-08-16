@@ -6,7 +6,8 @@ Currently implemented are:
 - gates :: Create the basic gates from NANDs
 
 * Simulation and Dependencies
-The simulation procedure is in each directory's README. However, the dependencies are all the same:
+The simulation procedure is in each directory's README.
+However, the dependencies are all the same:
 
 - [[https://www.gnu.org/software/make/][make]] :: Compile the sources.
 - [[https://www.veripool.org/][verilator]] :: Synthesize the verilog sources.
