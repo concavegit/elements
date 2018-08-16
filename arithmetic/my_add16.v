@@ -39,4 +39,3 @@ module my_add16 (input [15:0] a, b,
 
    xor(out[0], a[0], b[0], carry14);
 endmodule
-
