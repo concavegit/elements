@@ -9,7 +9,6 @@ These are chips which run basic arithmetic.
 5. From the GUI, append the signals by selecting TOP, select the signals, and click =Append=.
 
 * Results
-
 | Chip      | Nands Used |
 |-----------+------------|
 | halfadder |          5 |
