@@ -1,9 +1,9 @@
-`include "my_not.v"
-`include "my_and.v"
-`include "my_or.v"
-`include "my_xor.v"
-`include "my_mux.v"
-`include "my_dmux.v"
+`include "my_not"
+`include "my_and"
+`include "my_or"
+`include "my_xor"
+`include "my_mux"
+`include "my_dmux"
 
 module my_gates(input in0, in1, sel,
                 output out_not, out_and, out_or, out_xor, out_mux,

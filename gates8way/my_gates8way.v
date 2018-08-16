@@ -1,7 +1,7 @@
-`include "my_and8way.v"
-`include "my_or8way.v"
-`include "my_mux8way16.v"
-`include "my_dmux8way.v"
+`include "my_and8way"
+`include "my_or8way"
+`include "my_mux8way16"
+`include "my_dmux8way"
 
 module my_gates8way(input [15:0] in0, in1, in2, in3, in4, in5, in6,
                     in7,

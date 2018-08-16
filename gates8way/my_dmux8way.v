@@ -1,4 +1,4 @@
-`include "../gates/my_dmux.v"
+`include "../gates/my_dmux"
 
 module my_dmux8way(input in,
                    input [2:0] sel,

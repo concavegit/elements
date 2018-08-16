@@ -1,6 +1,6 @@
-`include "my_add16.v"
-`include "../gates8way/my_mux16.v"
-`include "my_or16way.v"
+`include "my_add16"
+`include "../gates8way/my_mux16"
+`include "my_or16way"
 
 module my_alu (input [15:0] x,
                input [15:0]  y,

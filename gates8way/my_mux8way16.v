@@ -1,4 +1,4 @@
-`include "my_mux16.v"
+`include "my_mux16"
 
 module my_mux8way16 (input [15:0] in0,
                      input [15:0]  in1,
