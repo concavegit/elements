@@ -1,0 +1,18 @@
+* Arithmetic
+These are chips which run basic arithmetic.
+
+* Run the tests
+1. Navigate to this folder: =cd <this_folder>=
+2. Create executable: =make=
+3. Generate waveform: =./obj_dir/Vmy_arithmetic=
+4. View waveform: =gtkwave obj_dir/trace.vcd=
+5. From the GUI, append the signals by selecting TOP, select the signals, and click =Append=.
+
+* Results
+
+| Chip      | Nands Used |
+|-----------+------------|
+| halfadder |          5 |
+| fulladder |         13 |
+| add16     |        191 |
+| alu       |        542 |
