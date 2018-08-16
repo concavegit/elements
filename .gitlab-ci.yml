@@ -1,6 +1,6 @@
 before_script:
   - apt-get update
-  - apt install -y verilator
+  - apt-get install -y verilator
 
 build:
   stage: build
