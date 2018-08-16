@@ -2,8 +2,8 @@ module my_mux16(input [15:0] in1, in2,
                 input         sel,
                 output [15:0] out);
 
-   wire                       a;
-   wire [15:0]                aa, bb;
+   bit                        a;
+   shortint                   aa, bb;
 
    nand (a, sel, sel);
 

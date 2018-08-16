@@ -1,8 +1,8 @@
 `include "../gates/my_dmux"
 
 module my_dmux8way(input in,
-                   input [2:0] sel,
-                   output      out0,
+                   [2:0] sel,
+                   output out0,
                    out1,
                    out2,
                    out3,
@@ -11,7 +11,7 @@ module my_dmux8way(input in,
                    out6,
                    out7);
 
-   wire                        a, b, c, d, e, f;
+   bit                    a, b, c, d, e, f;
 
    my_dmux d0(in, sel[0], a, b),
      d1(a, sel[1], c, d),

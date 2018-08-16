@@ -1,21 +1,21 @@
 `include "my_fullinc"
-module my_inc16 (input [15:0] in,
-                 output [15:0] out);
+module my_inc16 (input shortint in,
+                 output shortint out);
 
-   wire                        carry0,
-                               carry1,
-                               carry2,
-                               carry3,
-                               carry4,
-                               carry5,
-                               carry6,
-                               carry7,
-                               carry8,
-                               carry9,
-                               carry10,
-                               carry11,
-                               carry12,
-                               carry13;
+   bit                           carry0,
+                                 carry1,
+                                 carry2,
+                                 carry3,
+                                 carry4,
+                                 carry5,
+                                 carry6,
+                                 carry7,
+                                 carry8,
+                                 carry9,
+                                 carry10,
+                                 carry11,
+                                 carry12,
+                                 carry13;
 
    not (out[15], in[15]);
    my_fullinc f0(in[14], in[15], out[14], carry0),

@@ -1,7 +1,7 @@
 module my_dmux(input in, sel,
                output out1, out2);
 
-   wire               a, b, c;
+   bit                a, b, c;
 
    nand (a, sel, sel),
      (b, in, a),

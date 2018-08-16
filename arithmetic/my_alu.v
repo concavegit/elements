@@ -2,25 +2,19 @@
 `include "../gates8way/my_mux16"
 `include "my_or16way"
 
-module my_alu (input [15:0] x,
-               input [15:0]  y,
-               input         zx,
-               input         nx,
-               input         zy,
-               input         ny,
-               input         f,
-               input         no,
-               output [15:0] out,
-               output        zr,
-               output        ng);
+module my_alu (input shortint x, y,
+               bit             zx, nx, zy, ny, f, no,
+               output shortint out,
+               bit             zr,
+               bit             ng);
 
-   wire [15:0]               zx0, nx0, zy0, ny0, f0, f1, f2;
-   wire                      nzx, nzy;
+   shortint                    zx0, nx0, zy0, ny0, f0, f1, f2;
+   bit                         nzx, nzy;
 
    not (nzx, zx),
      (nzy, zy);
 
-   genvar                    i;
+   genvar                      i;
 
    generate
       for (i = 0; i < 16; i++) begin

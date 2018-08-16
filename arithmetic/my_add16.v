@@ -1,23 +1,23 @@
 `include "my_fulladder"
 
-module my_add16 (input [15:0] a, b,
-                 output [15:0] out);
+module my_add16 (input shortint a, b,
+                 output shortint out);
 
-   wire                        carry0,
-                               carry1,
-                               carry2,
-                               carry3,
-                               carry4,
-                               carry5,
-                               carry6,
-                               carry7,
-                               carry8,
-                               carry9,
-                               carry10,
-                               carry11,
-                               carry12,
-                               carry13,
-                               carry14;
+   bit                           carry0,
+                                 carry1,
+                                 carry2,
+                                 carry3,
+                                 carry4,
+                                 carry5,
+                                 carry6,
+                                 carry7,
+                                 carry8,
+                                 carry9,
+                                 carry10,
+                                 carry11,
+                                 carry12,
+                                 carry13,
+                                 carry14;
 
 
    my_halfadder h0(a[15], b[15], out[15], carry0);

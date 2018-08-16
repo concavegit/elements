@@ -1,7 +1,7 @@
-module my_or8way (input [7:0] in,
+module my_or8way (input byte in,
                   output out);
 
-   wire                  a, b, c, d, e, f;
+   bit                   a, b, c, d, e, f;
 
    or (a, in[0], in[1]),
      (b, in[2], in[3]),
