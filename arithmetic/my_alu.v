@@ -17,12 +17,12 @@ module my_alu (input shortint x, y,
    genvar                      i;
 
    generate
-      for (i = 0; i < 16; i++) begin
+      for (i = 0; i < $bits(x); i++) begin
          and (zx0[i], x[i], nzx),
         (zy0[i], y[i], nzy);
       end
 
-      for (i = 0; i < 16; i++) begin
+      for (i = 0; i < $bits(x); i++) begin
          xor (nx0[i], zx0[i], nx),
         (ny0[i], zy0[i], ny);
       end
@@ -33,7 +33,7 @@ module my_alu (input shortint x, y,
    my_mux16 mw(f0, f1, f, f2);
 
    generate
-      for (i = 0; i < 16; i++) begin
+      for (i = 0; i < $bits(x); i++) begin
          xor (out[i], f2[i], no);
       end
    endgenerate

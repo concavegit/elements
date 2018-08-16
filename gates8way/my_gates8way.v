@@ -17,7 +17,7 @@ module my_gates8way(input shortint in0, in1, in2, in3, in4, in5, in6,
    byte                             a;
 
    generate
-      for (i = 0; i < 8; i = i + 1) begin
+      for (i = 0; i < $bits(a); i = i + 1) begin
          assign a[i] = in0[i];
       end
    endgenerate
