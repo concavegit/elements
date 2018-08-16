@@ -14,5 +14,6 @@ These are chips which run basic arithmetic.
 |-----------+------------|
 | halfadder |          5 |
 | fulladder |         13 |
-| add16     |        191 |
-| alu       |        542 |
+| add16     |        195 |
+| inc16     |        125 |
+| alu       |        546 |
