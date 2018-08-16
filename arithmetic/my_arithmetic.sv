@@ -1,4 +1,4 @@
-`include "my_add16"
+`include "my_alu"
 
 module my_arithmetic (input shortint a, b,
                       bit      alu_zx, alu_nx, alu_zy, alu_ny, alu_f, alu_no,
