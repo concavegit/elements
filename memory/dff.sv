@@ -1,10 +1,7 @@
 module dff (input in, clock,
-            output out);
-
-   bit             out0;
+            output reg out);
 
    always @ (posedge clock) begin
-      out <= out0;
-      out0 <= in;
+      out <= in;
    end
 endmodule
