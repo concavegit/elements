@@ -18,14 +18,19 @@ int main(int argc, char** argv)
   top.trace(&tfp, 99);
   tfp.open("obj_dir/trace.vcd");
 
-  for (auto i = 0; i < 8; i++)
+  for (auto i = 0; i < 16; i++)
     {
-      top.clock = !top.clock;
-      top.in = 92 >> i;
+      top.in = 192342 >> i;
 
       top.eval();
-      tfp.dump(main_time);
+      top.clock = !top.clock;
       main_time++;
+      tfp.dump(main_time);
+
+      top.eval();
+      top.clock = !top.clock;
+      main_time++;
+      tfp.dump(main_time);
     }
 
   top.final();

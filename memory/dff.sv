@@ -1,5 +1,5 @@
 module dff (input in, clock,
-            output reg out);
+            output out);
 
    always @ (posedge clock) begin
       out <= in;
