@@ -20,17 +20,13 @@ int main(int argc, char** argv)
 
   for (auto i = 0; i < 16; i++)
     {
-      top.in = 192342 >> i;
-
+      top.in = rand();
+      top.load = rand();
       top.eval();
-      top.clock = !top.clock;
-      main_time++;
       tfp.dump(main_time);
 
-      top.eval();
       top.clock = !top.clock;
       main_time++;
-      tfp.dump(main_time);
     }
 
   top.final();
