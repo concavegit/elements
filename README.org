@@ -1,6 +1,6 @@
 * Elements
 
-This is a collection of various implementations of basic computer chip components.
+This is a collection of various implementations of basic computer chip components, inspired by [[https://www.nand2tetris.org/book][/The Elements of Computing Systems/]].
 Currently implemented are:
 
 - gates :: Create the basic gates from NANDs
