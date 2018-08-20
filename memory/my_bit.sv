@@ -1,6 +1,6 @@
 `include "../gates/my_mux.sv"
 
-module my_bit (input in, clock, load,
+module my_bit (input in, load, clock,
                output out);
 
    bit                a;
